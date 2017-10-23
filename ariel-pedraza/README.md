@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+Any loop that requires i to increment over the loop needs to be let because const does not allow i to be incremented. In general, anything that needed to be reassigned, like using a += to add something new to the original value didn't work either as a const.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+converting to template literals was easy and is less annoying to type out and read. Concatenation along with var is dead. Long live template literals and const/let!
